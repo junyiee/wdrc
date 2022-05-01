@@ -24,7 +24,7 @@ export const homeObjTwo = {
     headline: 'Create a contestant account',
     description: 'Update your bio, upload pictures and racecar details.',
     buttonLabel: 'Start Now',
-    imgStart: false,
+    imgStart: true,
     img: require('../../images/svg-5.svg').default,
     alt: 'Social',
     dark: false,

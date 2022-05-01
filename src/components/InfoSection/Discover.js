@@ -24,13 +24,13 @@ const Discover = () => {
                         <DiscoverH2>Schedule & Tickets</DiscoverH2>
                     </DiscoverCard>
                 </DiscoverLink>
-                <DiscoverLink to='/login'>
+                <DiscoverLink to='/classes'>
                     <DiscoverCard>
                         <DiscoverIcon src={Icon3} />
                         <DiscoverH2>Classes</DiscoverH2>
                     </DiscoverCard>
                 </DiscoverLink>
-                <DiscoverLink to='/login'>
+                <DiscoverLink to='/results'>
                     <DiscoverCard>
                         <DiscoverIcon src={Icon4} />
                         <DiscoverH2>Results</DiscoverH2>

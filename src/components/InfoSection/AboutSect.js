@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from '../ButtonElements';
 
 import { 
     InfoContainer, 
@@ -12,12 +11,13 @@ import {
     Heading,
     Subtitle,
     BtnWrap,
+    BtnLink,
     ImgWrap,
     Img
 } from './InfoElements';
 
 /* text and image column template */
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, 
+const AboutSection = ({lightBg, id, imgStart, topLine, lightText, headline, 
     darkText, description, buttonLabel, img, alt, primary, dark}) => {
   return (
     <>
@@ -30,16 +30,11 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline,
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button 
-                                    to='home'
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
+                                <BtnLink 
+                                    to='/about'
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}
-                                >{buttonLabel}</Button>
+                                >{buttonLabel}</BtnLink>
                             </BtnWrap>
                         </TextWrapper>
                     </Column1>
@@ -55,4 +50,4 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline,
   )
 }
 
-export default InfoSection
+export default AboutSection
