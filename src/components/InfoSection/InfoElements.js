@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const InfoContainer = styled.div`
     color: #fff;
@@ -13,7 +13,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 800px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -108,6 +108,11 @@ export const BtnLink = styled(Link)`
 
 export const ImgWrap = styled.div`
     max-width: 555px;
+    height: 100%;
+`;
+
+export const SmallImgWrap = styled.div`
+    max-width: 360px;
     height: 100%;
 `;
 

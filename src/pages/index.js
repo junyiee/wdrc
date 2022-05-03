@@ -3,10 +3,11 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/InfoSection/AboutSect';
-import { homeObjOne, homeObjTwo } from '../components/InfoSection/Data';
+import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
 import Discover from '../components/InfoSection/Discover'
 import Footer from '../components/Footer';
 import SignUpSection from '../components/InfoSection/SignUpSect';
+import Series from '../components/InfoSection/Series';
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
             <HeroSection />
             <AboutSection {...homeObjOne} />
             <Discover />
+            <Series {...homeObjThree}/>
             <SignUpSection {...homeObjTwo} />
             <Footer />
         </>
