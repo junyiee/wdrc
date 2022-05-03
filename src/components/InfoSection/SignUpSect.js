@@ -31,7 +31,7 @@ const SignUpSection = ({lightBg, id, imgStart, topLine, lightText, headline,
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
                                 <BtnLink 
-                                    to='/signup'
+                                    to='/form'
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}
                                 >{buttonLabel}</BtnLink>
