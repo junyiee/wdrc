@@ -7,7 +7,6 @@ const UserProfileForm = () => {
     images: [],
   });
   const [errors, setErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setValues({ ...values, bio: e.target.value });
