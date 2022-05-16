@@ -1,13 +1,11 @@
 import React from 'react';
-import Logo from '../../images/rw_wdrc.png';
 import { 
     InfoContainer,
     InfoWrapper,
     TextWrapper,
     Heading,
-    Subtitle,
-    ImgWrap,
-    Img
+    SubHeading,
+    Subtitle
 } from './PageElements';
 
 const AboutInfo = () => {
@@ -31,10 +29,18 @@ const AboutInfo = () => {
                         of drag racing platforms and creates an even playing field for all. The index class eliminates the need for 
                         monitoring engine size, turbo size and drive train format. Run the time, run the index, simple and fun.
                     </Subtitle>
+                    <SubHeading>WHY IMPORTS VS DOMESTICS?</SubHeading>
+                    <Subtitle>
+                        With the complexity of the vehicle and the various drive trains that comes with todays vehicles, it becomes 
+                        difficult to have a class to fit all.
+                    </Subtitle>
+                    <Subtitle>
+                        Since we primarily cater to the street modifiers of both import and domestic formats, it was important to keep 
+                        it simple. Vinny Ten of Vinny Ten Racing created the Index format, which simplified the classes by focusing on 
+                        the times these cars ran and not the chassis layout, engine or power adders. Again making it simple and keeping 
+                        it fun and competitive for all.
+                    </Subtitle>
                 </TextWrapper>
-                <ImgWrap>
-                    <Img src={Logo} />
-                </ImgWrap>
             </InfoWrapper>
         </InfoContainer>
     </>

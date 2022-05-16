@@ -7,6 +7,7 @@ import About from "./pages/about";
 import Form from "./source/Form";
 import UserProfileForm from "./pages/user-profile-form";
 import Result from "./pages/results";
+import Classes from "./pages/classes";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
         <Route path="/forms" element={<Forms />} />
         <Route path="/about" element={<About />} />
         <Route path="/form" element={<Form />} />
-        <Route path="/result" element={<Result />} />
+        <Route path="/results" element={<Result />} />
         <Route path="/user-profile-form" element={<UserProfileForm />} />
+        <Route path="/classes" element={<Classes />} />
       </Routes>
     </Router>
   );

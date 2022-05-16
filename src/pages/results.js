@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import { Bracket } from "react-brackets";
 import { Seed, SeedItem, SeedTeam } from "react-brackets";
 import { Link } from "react-router-dom";
+import AltNav from "../components/Navbar/AltNav";
+import ScrollToTop from "../components/ScrollToTop";
+import AltSidebar from "../components/Sidebar/AltSidebar";
 
 const Result = () => {
   let speedTimes = [20, 20.2, 20.5, 21];
@@ -53,8 +56,19 @@ const Result = () => {
       ],
     },
   ];
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+      setIsOpen(!isOpen);
+  }
+
   return (
-    <div
+    <>
+      <ScrollToTop />
+      <AltSidebar isOpen={isOpen} toggle={toggle} />
+      <AltNav toggle={toggle} />
+      <div
       style={{
         display: "flex",
         justifyContent: "center",
@@ -62,9 +76,10 @@ const Result = () => {
         marginTop: "20px",
         height: "100vh",
       }}
-    >
-      <Bracket rounds={rounds} renderSeedComponent={CustomSeed} />
-    </div>
+      >
+        <Bracket rounds={rounds} renderSeedComponent={CustomSeed} />
+      </div>
+    </>
   );
 };
 

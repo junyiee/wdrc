@@ -8,6 +8,7 @@ import Discover from '../components/InfoSection/Discover'
 import Footer from '../components/Footer';
 import SignUpSection from '../components/InfoSection/SignUpSect';
 import Series from '../components/InfoSection/Series';
+import ScrollToTop from '../components/ScrollToTop';
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
 
     return (
         <>
+            <ScrollToTop />
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
             <HeroSection />

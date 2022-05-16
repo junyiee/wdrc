@@ -10,7 +10,7 @@ import {
     NavReLinks,
     NavBtn,
     NavBtnLink
-} from './NavbarElements';
+} from './AltElements';
 
 const AltNav = ({toggle}) => {
     return (

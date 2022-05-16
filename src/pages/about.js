@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 import AltNav from '../components/Navbar/AltNav';
 import AboutInfo from '../components/PageInfo/AboutInfo';
+import ScrollToTop from '../components/ScrollToTop';
+import AltSidebar from '../components/Sidebar/AltSidebar';
 
 
 const About = () => {
@@ -14,7 +15,8 @@ const About = () => {
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle} />
+            <ScrollToTop />
+            <AltSidebar isOpen={isOpen} toggle={toggle} />
             <AltNav toggle={toggle} />
             <AboutInfo />
             <Footer />

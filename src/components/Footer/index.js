@@ -53,17 +53,17 @@ const Footer = () => {
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>Sections</FooterLinkTitle>
-                <FooterLink to="/">About Us</FooterLink>
-                <FooterLink to="/">Schedule & Tickets</FooterLink>
-                <FooterLink to="/">Classes</FooterLink>
-                <FooterLink to="/result">Results</FooterLink>
+                <FooterLink to="/about">About Us</FooterLink>
+                <FooterLink to="/schedule">Schedule & Tickets</FooterLink>
+                <FooterLink to="/classes">Classes</FooterLink>
+                <FooterLink to="/results">Results</FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>Find Us</FooterLinkTitle>
                 <FooterP>Patrick Thomas</FooterP>
-                <FooterP>CEO / Race Direactor</FooterP>
+                <FooterP>CEO / Race Director</FooterP>
                 <FooterP>info@worlddragracingcircuit.com</FooterP>
               </FooterLinkItems>
             </FooterLinksWrapper>

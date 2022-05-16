@@ -18,7 +18,7 @@ const Discover = () => {
         <DiscoverContainer id="discover">
             <DiscoverH1>Discover More</DiscoverH1>
             <DiscoverWrapper>
-                <DiscoverLink to='/login'>
+                <DiscoverLink to='/schedule'>
                     <DiscoverCard>
                         <DiscoverIcon src={Icon2} />
                         <DiscoverH2>Schedule & Tickets</DiscoverH2>

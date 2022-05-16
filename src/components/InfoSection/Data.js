@@ -2,18 +2,18 @@
 
 export const homeObjOne = {
     id: 'about',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: 'Imports vs Domestics',
     headline: 'Drag Racing League: Make Racing Fun',
     buttonLabel: 'Learn More',
     imgStart: false,
     img: require('../../images/svg-1.svg').default,
     alt: 'Car',
-    dark: false,
-    primary: false,
-    darkText: true
+    dark: true,
+    primary: true,
+    darkText: false
 };
 
 export const homeObjTwo = {
