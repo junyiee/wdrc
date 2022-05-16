@@ -5,7 +5,7 @@ export const InfoContainer = styled.div`
     background: #f9f9f9;
 
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        padding: 100px 30px;
     }
 `;
 

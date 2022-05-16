@@ -24,7 +24,7 @@ const AltSidebar = ({ isOpen, toggle }) => {
                 <SidebarReLink to="/results" onClick={toggle}>Results</SidebarReLink>
             </SidebarMenu>
             <SideBtnWrap>
-                <SidebarRoute to="/login">Log In</SidebarRoute>
+                <SidebarRoute to="/forms">Log In</SidebarRoute>
             </SideBtnWrap>
         </SidebarWrapper>
     </SidebarContainer>
