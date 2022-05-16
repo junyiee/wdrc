@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import ImageUploader from "react-images-upload";
+import ScrollToTop from '../components/ScrollToTop';
+import AltSidebar from '../components/Sidebar/AltSidebar';
+import AltNav from '../components/Navbar/AltNav';
 
 const UserProfileForm = () => {
   const [values, setValues] = useState({
@@ -19,42 +22,55 @@ const UserProfileForm = () => {
   const handleSubmit = () => {
     //ToDo: put your logic here
   };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
-    <form onSubmit={handleSubmit} className="form" noValidate>
-      <div className="form-inputs">
-        <label className="form-label">Bio</label>
-        <textarea
-          className="form-input"
-          type="ric"
-          name="username"
-          placeholder="Enter your username"
-          value={values.bio}
-          onChange={handleChange}
-        />
-        {errors.bio && <p>{errors.bio}</p>}
-      </div>
-      <div
-        style={{
-          overflowY: "auto",
-          marginBottom: "0.5rem",
-          width: "80%",
-        }}
-      >
-        <ImageUploader
-          withIcon={true}
-          buttonText="Choose images"
-          onChange={onDrop}
-          imgExtension={[".jpg", ".gif", ".png", ".gif"]}
-          maxFileSize={5242880}
-          withPreview={true}
-          style={{ maxHeight: "300px" }}
-        />
-        {errors.email && <p>{errors.email}</p>}
-      </div>
-      <button className="form-input-btn" type="submit">
-        Submit
-      </button>
-    </form>
+    <>
+      <ScrollToTop />
+      <AltSidebar isOpen={isOpen} toggle={toggle} />
+      <AltNav toggle={toggle} />
+      <form onSubmit={handleSubmit} className="form" noValidate>
+        <div className="form-inputs">
+          <label className="form-label">Bio</label>
+          <textarea
+            className="form-input"
+            type="ric"
+            name="username"
+            placeholder="Enter your username"
+            value={values.bio}
+            onChange={handleChange}
+          />
+          {errors.bio && <p>{errors.bio}</p>}
+        </div>
+        <div
+          style={{
+            overflowY: "auto",
+            marginBottom: "0.5rem",
+            width: "80%",
+          }}
+        >
+          <ImageUploader
+            withIcon={true}
+            buttonText="Choose images"
+            onChange={onDrop}
+            imgExtension={[".jpg", ".gif", ".png", ".gif"]}
+            maxFileSize={5242880}
+            withPreview={true}
+            style={{ maxHeight: "300px" }}
+          />
+          {errors.email && <p>{errors.email}</p>}
+        </div>
+        <button className="form-input-btn" type="submit">
+          Submit
+        </button>
+      </form>
+    </>
+    
   );
 };
 
